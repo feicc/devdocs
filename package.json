@@ -1,7 +1,9 @@
 {
   "name": "Devdocs",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "bootstrap": "^4.0.0-alpha.5",
@@ -29,7 +31,9 @@
     "gulp-install": "latest",
     "gulp-ruby-sass": "latest",
     "highlight.js": "latest",
-    "node-sass": "latest"
+    "node-sass": "latest",
+    "snyk": "^1.134.2"
   },
-  "private": true
+  "private": true,
+  "snyk": true
 }
